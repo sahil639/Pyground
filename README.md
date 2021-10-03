@@ -1,2 +1,1 @@
-# HackerRank_Codes
- HackerRank codes 
+# Just python codes
