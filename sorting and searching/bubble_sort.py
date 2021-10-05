@@ -10,7 +10,9 @@ def bub_sort(num):
                num[j] = num[j+1]
                num[j+1] = temp
 
-num = [5, 3, 8, 6, 7, 2]
+# num = [5, 3, 8, 6, 7, 2]
+n = int(input('Enter the size of the list:'))
+num = list(map(int,input("\nEnter the numbers : ").strip().split()))[:n]
+print(f"your unsorted list is : {num}")
 bub_sort(num)
-
-print(num)
+print(f"your sorted list is : {num}")
