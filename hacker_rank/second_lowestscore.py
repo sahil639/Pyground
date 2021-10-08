@@ -1,7 +1,6 @@
-n = int(input()) #number of students
-d = {}  #initialized empty dict for key and values
-for i in range(n):
-    keys = input() # here i have taken keys as strings
-    values = int(input()) # here i have taken values as integers
-    d[keys] = values
-print(d)
+marksheet = []
+for _ in range(0,int(input())):
+    marksheet.append([input(), float(input())])
+
+second_highest = sorted(list(set([marks for name, marks in marksheet])))[1]
+print('\n'.join([a for a,b in sorted(marksheet) if b == second_highest]))
